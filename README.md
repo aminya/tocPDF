@@ -48,8 +48,8 @@ Edit the text such that each page number is at the beginning of a line, e.g.
 1 Cover
 2 Table of Contents
 5 Chapter 1
-6 +Subchapter1
-7 ++Sub-Subchapter1
++6 Subchapter1
+++7 Sub-Subchapter1
 25 Chapter 2
 ```
 Don't forget to add the offset to page number (usually the page numbers in pdf have an offset compared to printed document).
