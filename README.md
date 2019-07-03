@@ -43,10 +43,9 @@ for both scanned and searchable PDF -  https://ocr.space/
 We refer to generated text as tocText.
 
 
-## For the following steps instead you can check this repository which does a similar thing but with a GUI 
-It is in chineese, use google chrome to translate:
+## For the following steps instead you can check my other repository which does a similar thing but with a GUI 
+https://github.com/aminya/pdf-bookmark-English
 
-https://github.com/ifnoelse/pdf-bookmark/
 ### Step 3: Preparing the text of table of content
 
 Open tocText (txt or csv) with a spreadsheet editor (MS Excel or Google Sheet) or using a text edit.
