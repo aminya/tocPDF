@@ -43,8 +43,8 @@ for both scanned and searchable PDF -  https://ocr.space/
 We refer to generated text as tocText.
 
 
-## For the following steps instead you can check my other repository which does a similar thing but with a GUI 
-https://github.com/aminya/pdf-bookmark-English
+## For the following steps instead you can check the following which does a similar thing but with a GUI 
+https://github.com/ifnoelse/pdf-bookmark/blob/master/README-EN.md
 
 ### Step 3: Preparing the text of table of content
 
