@@ -16,7 +16,7 @@ https://www.techadvisor.co.uk/how-to/software/how-extract-pages-from-pdf-3679232
 
 We refer to this file as tocPDF.
 
-### Step 2: Extract table of content text
+### Step 2: Extract table of contents text
 Here we extract the text from tocPDF.
 
 Even if your pdf file is searchable, usually when you copy the text the result is not in proper format (like a table).
@@ -24,10 +24,10 @@ Even if your pdf file is searchable, usually when you copy the text the result i
 Preferred Methods:
 
 * ####  Tabula technology
-for searchable PDF only -  https://tabula.technology/
+For searchable PDF only -  https://tabula.technology/
 
 	* Download and run the software
-	* Select table of content and do this for each page
+	* Select table of contents and do this for each page
 	* Hit preview and export extracted data
 	* Export to csv format
 
@@ -40,15 +40,15 @@ for both scanned and searchable PDF -  https://ocr.space/
 	* download or copy paste the generated text.
 
 
-We refer to generated text as tocText.
+We refer to the generated text as tocText.
 
 
 ## For the following steps instead you can check the following which does a similar thing but with a GUI 
 https://github.com/ifnoelse/pdf-bookmark/blob/master/README-EN.md
 
-### Step 3: Preparing the text of table of content
+### Step 3: Preparing the text of the table of content
 
-Open tocText (txt or csv) with a spreadsheet editor (MS Excel or Google Sheet) or using a text edit.
+Open tocText (txt or csv) with a spreadsheet editor (MS Excel or Google Sheet) or using a text editor.
 
 Edit the text such that each page number is at the beginning of a line, e.g.
 ```
@@ -69,14 +69,14 @@ http://willus.com/k2pdfopt/download/
 Disabling the GUI using this tutorial
 http://willus.com/k2pdfopt/help/nogui.shtml
 
-Then drag original pdf file into your shortcut.
+Then drag the original pdf file into your shortcut.
 
 
 ### Step 6: Run the command:
 #### Windows:
 copy toc.txt and source pdf file in the folder of your shortcut for convenience.
 
-Copy paste the following command in the terminal and press enter.
+Copy-paste the following command in the terminal and press enter.
 ```
 -mode copy -n -toclist toc.txt srcfile.pdf -o outfile.pdf
 ```
@@ -126,23 +126,23 @@ from https://ebooks.stackexchange.com/a/7763/12921
 
     Enter the first pages that outmatch the page number in the TOC
 
-Your can read its manual (http://jpdfbookmarks.altervista.org/InsertBookmarks.html#1_3_1) or watch a quick video tutorial (https://youtu.be/7DUkvH7_wII?t=30). It has command line mode and can work on Linux, Mac.
+You can read its manual (http://jpdfbookmarks.altervista.org/InsertBookmarks.html#1_3_1) or watch a quick video tutorial (https://youtu.be/7DUkvH7_wII?t=30). It has command line mode and can work on Linux, Mac.
 
 #### Other Methods for step 2:
 
 * Tesseract OCR:
 	https://github.com/tesseract-ocr/tesseract
 
-	Three is good tutorial for Extracting Table Data From PDFs with Tesseract OCR:
+	Three is a good tutorial for Extracting Table Data From PDFs with Tesseract OCR:
 	https://web.archive.org/web/20141022033241/http://craiget.com/extracting-table-data-from-pdfs-with-ocr/
 
 * Using OnlineOCR.net - Free up to a limit:
 https://www.onlineocr.net/
 
-	* Register in the website (to remove page number limitation) and login
+	* Register in the website (to remove page number limitation) and log in
 	* Select txt file option, Upload tocPDF, Convert your file
 
-* A related Stack overflow question:
+* A related Stack Overflow question:
 https://stackoverflow.com/questions/6173439/can-ocr-software-reliably-read-values-from-a-table
 
 #### References:
