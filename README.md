@@ -87,23 +87,6 @@ Press enter again to start bookmarking.
 k2pdfopt -mode copy -n -toclist toc.txt srcfile.pdf -o outfile.pdf
 ```
 
-
-## Automated:
-
-For now, I plan to start using available software (e.g. k2pdfoptdoes), and then later make the functionality Julia native (when [PDFIO.jl](https://github.com/sambitdash/PDFIO.jl/issues/66) adds pdf write capability).
-
-Current algorithm plan:
-* The user will provide page numbers that contain the table of content.
-* Those pages are read from pdf by Julia
-* Julia will extract these pages (here user can be called to do the cropping of the borders)
-* Julia will send the extracted pages to https://ocr.space/ to do OCR, and then it gets the text from the table of content (using the [available APIs (Python, C++, etc)](https://ocr.space/ocrapi))
-* Julia will edit the received text to make it a specified format. (here user can be called to do a review). The prepared text file will be saved.
-* A software is called from Julia (e.g. k2pdfoptdoes from the command line). That software will read the original pdf file and text file and will generate the bookmarks for the pdf and will save it.
-
-
-* Also, if the pdf file is searchable, Julia can check the fonts in the whole pdf, and for example, get the text of Bold fonts. ([Infix PDF Editor](https://www.iceni.com/blog/how-to-bookmark-pages-in-a-pdf/) does this.) Manual font providing by the user also can be done ( The expensive [Evermap AutoBookmark ](https://www.evermap.com/autobookmark.asp) plugin for Adobe and [Nitro PDF](https://www.gonitro.com/) do this.)
-
-
 ## Other Manual Methods:
 #### Other method using Jpdfbookmark
 https://sourceforge.net/projects/jpdfbookmarks/
